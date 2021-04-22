@@ -10,7 +10,7 @@ import { ptBR } from 'date-fns/locale'
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString'
 import { api } from '../../services/api'
 
-import styles from './episode.module.scss';
+import styles from './episode.module.scss'
 
 type Episode = {
   id: string
@@ -34,7 +34,7 @@ export default function Episode({ episode }: EpisodeProps) {
       <div className={styles.thumbnailContainer}>
         <Link href="/">
           <button type="button">
-            <img src="/arrow-left.svg" alt="Voltar"/>
+            <img src="/arrow-left.svg" alt="Voltar" />
           </button>
         </Link>
         <Image
@@ -44,7 +44,7 @@ export default function Episode({ episode }: EpisodeProps) {
           objectFit="cover"
         />
         <button type="button">
-          <img src="/play.svg" alt="Tocar episódio"/>
+          <img src="/play.svg" alt="Tocar episódio" />
         </button>
       </div>
 
